@@ -1,7 +1,3 @@
-from flask import Flask, render_template, request
-from os import environ
-import requests
-
 app = Flask(__name__)
 
 backend_URL = environ.get('BACKEND_URL', 'http://localhost:5001/')
