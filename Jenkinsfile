@@ -45,7 +45,7 @@ pipeline { //PIPELINE_START
         }
   //STAGE-END
   //STAGE-START
-        stage('Build application image') {
+        stage('Build') {
             steps 
             {
                 script 
@@ -57,7 +57,7 @@ pipeline { //PIPELINE_START
         }
   //STAGE-END
   //STAGE-START
-        stage ('Pushing image to docker registry') {
+        stage ('Pushing Image') {
             steps 
             {
                 script 
